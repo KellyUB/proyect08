@@ -1,4 +1,5 @@
 int
+
 main ()
 {
     cout << "Operaciones aritmeticas ( 1= Multiplocacion, 2=Division, 3=Suma , 4= Resta) : \n";
