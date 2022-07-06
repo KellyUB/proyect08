@@ -1,0 +1,41 @@
+int
+main ()
+{
+    cout << "Operaciones aritmeticas ( 1= Multiplocacion, 2=Division, 3=Suma , 4= Resta) : \n";
+    int opcion = 0;
+    cin >> opcion;
+    int n1, n2, suma = 0, resta = 0, multiplicacion = 0, division = 0;
+    cout << "Digite el numero 1: ";
+    cin >> n1;
+    cout << "Digite el numero 2: ";
+    cin >> n2;
+    if (opcion==2 && n1 == 0 || n2 == 0)
+    {
+        std::cout << "No se puede divir entre 0" << std::endl;
+    } else {
+        switch (opcion) {
+        case 1:
+            cout << " Usted ha seleccionado la opcion Multiplocacion: ";
+            multiplicacion = n1 * n2;
+            std::cout << n1 << " * " << n2 << " = " << multiplicacion << std::endl;
+        break;
+        case 2:
+            cout << " Usted ha seleccionado la opcion Division: ";
+            division = n1 / n2;
+            std::cout << n1 << " / " << n2 << " = " << division << std::endl;
+        break;
+        case 3:
+            cout << " Usted ha seleccionado la opcion Suma: ";
+            suma = n1 + n2;
+            std::cout << n1 << " + " << n2 << " = " << suma << std::endl;
+        break;
+        case 4:
+            cout << " Usted ha seleccionado la opcion Resta: ";
+            resta = n1 - n2;
+            std::cout << n1 << " - " << n2 << " = " << resta << std::endl;
+        break;
+        }
+    }
+
+    return 0;
+}
